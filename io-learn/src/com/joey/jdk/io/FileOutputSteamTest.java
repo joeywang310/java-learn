@@ -11,6 +11,8 @@ public class FileOutputSteamTest {
             File file = new File("D:\\workspace\\IDEA\\java-learn\\io-learn\\src\\com\\joey\\jdk\\io\\a.txt");
             FileOutputStream fileOutputStream = new FileOutputStream(file);
             fileOutputStream.write(content.getBytes());
+
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -18,4 +20,5 @@ public class FileOutputSteamTest {
         }
 
     }
+
 }
