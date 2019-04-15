@@ -16,7 +16,9 @@ public class WaitNotufyAllDemo extends Thread {
 
     @Override
     public void run() {
+        System.out.println("开始执行");
         synchronized (calculator) {
+            System.out.println("拿到锁");
             try {
                 System.out.println(Thread.currentThread() + "等待计算结果。。。");
                 calculator.wait();
@@ -30,11 +32,11 @@ public class WaitNotufyAllDemo extends Thread {
 
     //测试
     public static void main(String[] args) throws InterruptedException {
-        Calculator calculator = new Calculator();
+         Calculator calculator = new Calculator();
         new WaitNotufyAllDemo(calculator).start();
         new WaitNotufyAllDemo(calculator).start();
         new WaitNotufyAllDemo(calculator).start();
-//        sleep(1000);
+        sleep(1000);
         calculator.start();
     }
 }
