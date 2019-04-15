@@ -1,5 +1,6 @@
 package com.wzc.lock;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
@@ -10,6 +11,7 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
  * Date: 2019-04-11 14:22
  */
 public class MyMutexLock {
+
 
     private static class Sync extends AbstractQueuedSynchronizer {
 
