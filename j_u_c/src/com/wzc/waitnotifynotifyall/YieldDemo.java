@@ -1,4 +1,4 @@
-package com.wzc;
+package com.wzc.waitnotifynotifyall;
 
 /**
  * Created with IntelliJ IDEA.
