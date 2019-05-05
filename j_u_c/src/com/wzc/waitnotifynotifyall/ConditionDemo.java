@@ -1,5 +1,6 @@
 package com.wzc.waitnotifynotifyall;
 
+import java.util.Arrays;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -82,4 +83,5 @@ class WithdrawThread extends Thread {
     public void run() {
         myCount.withdraw(x,name);
     }
+
 }
